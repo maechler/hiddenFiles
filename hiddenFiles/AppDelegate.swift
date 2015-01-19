@@ -10,18 +10,36 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
+    @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var window: NSWindow!
-
-
+    
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        statusItem.title = "HF"
+        statusItem.menu = statusMenu
     }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+    
+    @IBAction func menuClicked(sender: NSMenuItem) {
+        let task = NSTask()
+        task.launchPath = "/usr/bin/defaults"
+        
+        if(sender.state == NSOnState) {
+            sender.state = NSOffState
+            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "NO"]
+        } else {
+            sender.state = NSOnState
+            task.arguments = ["write", "com.apple.finder", "AppleShowAllFiles", "YES"]
+        }
+        
+        task.launch()
+        task.waitUntilExit()
+        
+        let killtask = NSTask()
+        killtask.launchPath = "/usr/bin/killall"
+        killtask.arguments = ["Finder"]
+        killtask.launch()
     }
-
-
+    
 }
-

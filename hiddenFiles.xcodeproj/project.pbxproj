@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		949BE3471A6DAEAC00A1CE74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BE3461A6DAEAC00A1CE74 /* AppDelegate.swift */; };
-		949BE3491A6DAEAC00A1CE74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949BE3481A6DAEAC00A1CE74 /* Images.xcassets */; };
 		949BE34C1A6DAEAC00A1CE74 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949BE34A1A6DAEAC00A1CE74 /* MainMenu.xib */; };
 		949BE3581A6DAEAC00A1CE74 /* hiddenFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949BE3571A6DAEAC00A1CE74 /* hiddenFilesTests.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		949BE3411A6DAEAC00A1CE74 /* hiddenFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hiddenFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949BE3451A6DAEAC00A1CE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		949BE3461A6DAEAC00A1CE74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		949BE3481A6DAEAC00A1CE74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		949BE34B1A6DAEAC00A1CE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		949BE3511A6DAEAC00A1CE74 /* hiddenFilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiddenFilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		949BE3561A6DAEAC00A1CE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				949BE3461A6DAEAC00A1CE74 /* AppDelegate.swift */,
-				949BE3481A6DAEAC00A1CE74 /* Images.xcassets */,
 				949BE34A1A6DAEAC00A1CE74 /* MainMenu.xib */,
 				949BE3441A6DAEAC00A1CE74 /* Supporting Files */,
 			);
@@ -186,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949BE3491A6DAEAC00A1CE74 /* Images.xcassets in Resources */,
 				949BE34C1A6DAEAC00A1CE74 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +389,7 @@
 				949BE35D1A6DAEAC00A1CE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		949BE35E1A6DAEAC00A1CE74 /* Build configuration list for PBXNativeTarget "hiddenFilesTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +398,7 @@
 				949BE3601A6DAEAC00A1CE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
